@@ -1,0 +1,22 @@
+<%- include("partials/header") %>
+
+<div class="container">
+    <h1 class="compose-heading">
+        Edit Your Blog
+    </h1>
+
+    <form action="/posts/<%=post._id %>?_method=PUT" method="post">
+        <div class="form-group">
+        <label class="cstm" for="title">Title</label>
+        <input  type="text" class="form-control" name="title" value="<%= post.title%>" >
+        <label class="cstm" for="author">Author Name</label>
+        <input  type="text" class="form-control" name="author" value="<%= post.authorname%>">
+        <label class="cstm" for="imageurl">Image URL</label>
+        <input  type="text" class="form-control" name="imgurl" value="<%= post.imageurl%>" >
+        <label class="cstm" for="content">Post</label>
+        <textarea  class="form-control" name="content" cols="38" rows="5"><%= post.content%></textarea>
+        </div>
+        <button type="submit" class="cstm-mar btn btn-dark">publish</button>
+    </form>
+</div>
+<%- include("partials/footer") %>

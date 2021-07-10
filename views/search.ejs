@@ -1,0 +1,28 @@
+<%- include partials/header.ejs -%>
+
+<div id="search" class="container">
+    <!-- Blog entries-->
+    <div class="row">
+
+        <% arr.forEach(function(ele) {  %>
+            <div class="col-lg-6">
+                <!-- Featured blog post-->
+                <div class="card mb-4">
+                    <a href="#!"><img class="card-img-top" src=" <%= ele.imageurl %> " alt="..." /></a>
+                    <div class="card-body">
+                        <div class="small text-muted"><%= ele.created.toDateString() %> </div>
+                        <h2 class="card-title"><%= ele.title %> </h2>
+                        <p class="card-text"><%= ele.content.substring(0,100) + " ..." %>  </p>
+                        <a class="btn btn-dark" href="/posts/<%= ele._id %>">Read more →</a>
+                    </div>
+                </div>
+    
+            </div>
+       <% }) %>
+    
+    </div>
+</div>
+
+
+
+<%- include("partials/footer") -%>

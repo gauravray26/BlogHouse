@@ -1,0 +1,43 @@
+
+
+
+body{
+    overflow-x:hidden;
+}
+
+
+ .cstm{
+     padding-top: 1%;
+     padding-bottom: 1%;
+ }
+
+ .footer-padding{
+     margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+
+.compose-heading{
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+.cstm-mar{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.download-btn{
+    margin: 2% 3% 2% 0;
+}
+
+.option{
+    text-align: center;
+}
+
+#delete{
+    display: inline;
+}
+
+#search{
+    margin-top: 4%;
+}
